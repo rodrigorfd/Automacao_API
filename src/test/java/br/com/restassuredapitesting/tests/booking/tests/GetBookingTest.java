@@ -122,7 +122,7 @@ public class GetBookingTest extends BaseTest {
     @Test
     @Severity(SeverityLevel.BLOCKER)
     @Category({AllTests.class, AcceptanceTests.class})
-    @DisplayName("Listar id's de reservas com baseno nome, data de checkin e  checkout")
+    @DisplayName("Listar id's de reservas com base no nome, data de checkin e  checkout")
     public void validaReservasNomeCheckinECheckout(){
         GetBookingRequest getBookingRequest = new GetBookingRequest();
 

@@ -40,7 +40,7 @@ public class PostBookingRequest {
 
 
 
-    @Step("Cria uma reserva com header inválido")
+    @Step("Cria uma reserva com payload inválido")
     public Response reservaComPayloadInvalido() {
 
         return given()
