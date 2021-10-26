@@ -1,0 +1,11 @@
+A API retorna 500 e não 418 quando o header de uma solicitação é invalido. 
+
+A API retorna 403 ao solicitar alteração em uma reserva sem um token ou com token inválido, um retorno adequado
+ja que caso a solicitação fosse cumprida resultaria numa falha de segurança.
+
+A API retorna 405 ao tentar alterar uma reserva que não existe
+
+A API retorna 403 ao tentar alterar uma reserva com o parâmetro 'Basic Auth' ou com um 'token' inválido, porem 
+com um 'token' válido o teste passa, então concluo que o 'Basic Auth' informado na documentação está incorreto.
+
+A API retorna 500 quando feita uma solicitação com filtro mal formatado.
