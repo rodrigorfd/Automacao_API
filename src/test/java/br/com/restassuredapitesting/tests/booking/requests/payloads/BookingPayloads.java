@@ -61,7 +61,6 @@ public class BookingPayloads {
         payload.put("depositpaid",true);
         payload.put("bookingdates",bookingDates);
         payload.put("additionalneeds","Breakfast");
-
         //Parâmetro extra
         payload.put("idade","26");
 

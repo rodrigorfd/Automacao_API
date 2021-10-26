@@ -51,7 +51,7 @@ public class PostBookingTest extends BaseTest {
     @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
     @DisplayName("Criar uma reserva com parâmetros a mais")
     public void criarReservaComParametrosAMais(){
-        postBookingRequest.262626()
+        postBookingRequest.criaUmaReservaComParametrosAMais()
                 .then()
                 .statusCode(200)
                 .log().all();
