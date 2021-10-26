@@ -9,3 +9,6 @@ A API retorna 403 ao tentar alterar uma reserva com o parâmetro 'Basic Auth' ou
 com um 'token' válido o teste passa, então concluo que o 'Basic Auth' informado na documentação está incorreto.
 
 A API retorna 500 quando feita uma solicitação com filtro mal formatado.
+
+Notei também que a ide não retorna parametros, que não estejam pre-definidos na documentação, na hora de criar uma 
+nova reserva.
