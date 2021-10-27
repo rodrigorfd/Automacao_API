@@ -1,6 +1,7 @@
 # Observações
 ### Desafio de Automação de APIs
 
+
 - No teste que o 'header' de uma solicitação é invalido a API retorna 500, o 'statusCode' esperado é 418,
 ja que o erro é por falta de um parâmetro válido da api e não um problema de servidor. 
 
