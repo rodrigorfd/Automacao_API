@@ -7,7 +7,7 @@ ja que o erro é por falta de um parâmetro válido da api e não um problema de
 - A API retorna 403 ao solicitar alteração em uma reserva sem um token ou com token inválido, um retorno adequado
 ja que caso a solicitação fosse cumprida resultaria numa falha de segurança.
 
-- Notei que a ide não retorna parametros, que não estejam pre-definidos na documentação, na hora de criar uma 
+- Notei que a API não retorna parametros, que não estejam pre-definidos na documentação, na hora de criar uma 
 nova reserva.
 
 - A API retorna 405 ao tentar alterar uma reserva que não existe.
