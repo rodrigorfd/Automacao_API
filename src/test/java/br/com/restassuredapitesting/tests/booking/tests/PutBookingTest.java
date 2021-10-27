@@ -86,7 +86,7 @@ public class PutBookingTest extends BaseTest {
     @DisplayName("Alterar uma reserva inexistente")
     public void validarAlteracaoDeUmaReservaInexistente(){
 
-        putBookingRequest.updateBookingToken(999,postAuthRequest.getToken())
+        putBookingRequest.updateBookingToken(99999,postAuthRequest.getToken())
                 .then()
                 .statusCode(200)
                 .body("size()",greaterThan(0));
