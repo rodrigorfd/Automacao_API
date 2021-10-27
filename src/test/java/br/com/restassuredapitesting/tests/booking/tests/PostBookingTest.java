@@ -71,6 +71,7 @@ public class PostBookingTest extends BaseTest {
     public void criarReservaComPayloadInvalido(){
         postBookingRequest.reservaComPayloadInvalido()
                 .then()
-                .statusCode(500);
+                .statusCode(500)
+                .log().all();
     }
 }

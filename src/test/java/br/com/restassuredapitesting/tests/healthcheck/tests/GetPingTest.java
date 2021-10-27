@@ -1,9 +1,9 @@
-package br.com.restassuredapitesting.tests.ping.tests;
+package br.com.restassuredapitesting.tests.healthcheck.tests;
 
 import br.com.restassuredapitesting.base.BaseTest;
 import br.com.restassuredapitesting.suites.AllTests;
 import br.com.restassuredapitesting.suites.HealthcheckTests;
-import br.com.restassuredapitesting.tests.ping.requests.GetPingRequest;
+import br.com.restassuredapitesting.tests.healthcheck.requests.GetPingRequest;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

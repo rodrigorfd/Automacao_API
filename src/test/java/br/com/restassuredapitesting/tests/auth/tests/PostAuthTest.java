@@ -25,7 +25,7 @@ public class PostAuthTest extends BaseTest {
     public void validaRetornoDeTokenParaUsuario(){
         postAuthRequest.tokenReturn()
                 .then()
-                .statusCode(200).log().all()
+                .statusCode(200)
                 .body("token",notNullValue());
     }
 }
