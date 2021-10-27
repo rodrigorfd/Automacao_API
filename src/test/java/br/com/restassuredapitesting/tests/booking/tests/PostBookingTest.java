@@ -12,7 +12,6 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
-import static org.hamcrest.Matchers.hasValue;
 import static org.hamcrest.Matchers.notNullValue;
 
 @Feature("Feature - Criação de Reservas ")
@@ -33,17 +32,14 @@ public class PostBookingTest extends BaseTest {
     @Test
     @Severity(SeverityLevel.BLOCKER)
     @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
-    @DisplayName("Cria duas reservas em sequencia")
-    public void validaCriacaoDeDuasReservasEmSequencia(){
-        postBookingRequest.retornaUmaNovaReserva()
-                .then()
-                .statusCode(200)
-                .body("bookingid",notNullValue());
-
-        postBookingRequest.retornaUmaNovaReserva()
-                .then()
-                .statusCode(200)
-                .body("bookingid",notNullValue());
+    @DisplayName("Cria varias reservas em sequencia")
+    public void validaCriacaoDeVariasReservasEmSequencia(){
+        for (int i=0; i<=4; i++){
+            postBookingRequest.retornaUmaNovaReserva()
+                    .then()
+                    .statusCode(200)
+                    .body("bookingid",notNullValue());
+        }
     }
 
     @Test
