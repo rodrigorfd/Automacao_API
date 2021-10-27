@@ -2,8 +2,8 @@
 ### Desafio de Automação de *APIs*
 
 
->- No teste que o '**header**' de uma solicitação é invalido a *API* retorna **500**, o '**statusCode**' esperado é **418**,
-ja que o erro é por falta de um parâmetro válido da *API* e não um problema de servidor. 
+>- No teste que o '**header**' de uma solicitação é invalido a *API* retorna **500**, o '**statusCode**' esperado é **418**,acredito 
+que o erro é por falta de um parâmetro válido da *API* e não um problema de servidor. 
 >
 >- A *API* retorna **403** ao solicitar alteração em uma reserva sem um '**token**' ou com '**token**' inválido, um retorno adequado
 ja que caso a solicitação fosse cumprida resultaria numa falha de segurança.
