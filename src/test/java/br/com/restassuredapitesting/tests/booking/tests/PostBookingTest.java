@@ -31,7 +31,7 @@ public class PostBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
+    @Category({AllTests.class, E2eTests.class})
     @DisplayName("Cria varias reservas em sequencia")
     public void validaCriacaoDeVariasReservasEmSequencia(){
         for (int i=0; i<=4; i++){
@@ -44,7 +44,7 @@ public class PostBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
+    @Category({AllTests.class, E2eTests.class})
     @DisplayName("Criar uma reserva com parâmetros a mais")
     public void criarReservaComParametrosAMais(){
         postBookingRequest.criaUmaReservaComParametrosAMais()
@@ -55,7 +55,7 @@ public class PostBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
+    @Category({AllTests.class, E2eTests.class})
     @DisplayName("Cria uma reserva com header inválido")
     public void criarReservaComHeaderInvalido(){
         postBookingRequest.reservaComHeaderInvalido()
@@ -66,7 +66,7 @@ public class PostBookingTest extends BaseTest {
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
-    @Category({AllTests.class, AcceptanceTests.class, E2eTests.class})
+    @Category({AllTests.class, E2eTests.class})
     @DisplayName("Valida retorno 500 ao criar uma reserva com payload inválido")
     public void criarReservaComPayloadInvalido(){
         postBookingRequest.reservaComPayloadInvalido()
