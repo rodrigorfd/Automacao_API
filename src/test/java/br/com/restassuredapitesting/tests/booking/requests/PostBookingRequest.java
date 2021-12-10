@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class PostBookingRequest {
 
     @Step("Retorna uma nova reserva")
-    public Response retornaUmaNovaReserva() {
+    public Response retornarUmaNovaReserva() {
 
         return given()
                 .header("Content-Type", "application/json")
@@ -19,7 +19,7 @@ public class PostBookingRequest {
     }
 
     @Step("Cria uma  reserva com parâmetros a mais")
-    public Response criaUmaReservaComParametrosAMais() {
+    public Response criarUmaReservaComParametrosAMais() {
 
         return given()
                 .header("Content-Type", "application/json")
@@ -29,7 +29,7 @@ public class PostBookingRequest {
     }
 
     @Step("Cria uma reserva com header inválido")
-    public Response reservaComHeaderInvalido() {
+    public Response criarReservaComHeaderInvalido() {
 
         return given()
                 .header("","" )
@@ -41,7 +41,7 @@ public class PostBookingRequest {
 
 
     @Step("Cria uma reserva com payload inválido")
-    public Response reservaComPayloadInvalido() {
+    public Response criarReservaComPayloadInvalido() {
 
         return given()
                 .header("Content-Type", "application/json")

@@ -5,10 +5,10 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteBookingRequest {
+public class DeleteAllRequest {
 
-    @Step("Deleta uma reserva")
-    public Response deletarUmaReserva(int id, String token){
+    @Step("Deleta todas as reservas")
+    public Response deletarTodasAsReservas(int id, String token){
 
         return given()
                 .header("Content-Type","application/json")

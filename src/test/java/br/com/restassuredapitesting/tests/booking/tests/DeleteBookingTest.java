@@ -34,7 +34,7 @@ public class DeleteBookingTest extends BaseTest {
                 .extract()
                 .path("[3].bookingid");
 
-        deleteBookingRequest.deletaUmaReserva(id,postAuthRequest.getToken())
+        deleteBookingRequest.deletarUmaReserva(id,postAuthRequest.getToken())
                 .then()
                 .statusCode(201);
     }
@@ -45,7 +45,7 @@ public class DeleteBookingTest extends BaseTest {
     @DisplayName("Deletar uma reserva que não existe")
     public void DeletarReservaQueNaoExiste(){
 
-        deleteBookingRequest.deletaUmaReserva(999,postAuthRequest.getToken())
+        deleteBookingRequest.deletarUmaReserva(999,postAuthRequest.getToken())
                 .then()
                 .statusCode(201);
     }
@@ -56,7 +56,7 @@ public class DeleteBookingTest extends BaseTest {
     @DisplayName("Deletar uma reserva sem autorização")
     public void DeletarReservaQueSemAutorizacao(){
 
-        deleteBookingRequest.deletaUmaReserva(59,"token=abc123")
+        deleteBookingRequest.deletarUmaReserva(59,"token=abc123")
                 .then()
                 .statusCode(201);
     }

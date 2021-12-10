@@ -40,7 +40,7 @@ public class GetBookingRequest {
     public Response bookingReturnByCheckin(int d,int m, int a){
         return given()
                 .when()
-                .get("booking?checkin="+a+"-"+m+"-"+d);
+                .get("booking?checkin"+a+"-"+m+"-"+d);
     }
 
     @Step("Retorna id's de reservas com base no checkout")
@@ -54,7 +54,7 @@ public class GetBookingRequest {
     public Response bookingReturnByCheckinAndCheckout(){
         return given()
                 .when()
-                .get("booking?checkin=2018-01-01&checkout=2019-01-01");
+                .get("booking?checkin2018-01-01&checkout2019-01-01");
     }
 
     @Step("Retorna id's de reservas com base no nome, na data de checkin e checkout")
@@ -64,7 +64,7 @@ public class GetBookingRequest {
                 .get("booking?firstname=Goku&checkin2018-01-01&checkout2019-01-01");
     }
 
-    @Step("Retorna id's de reservas com base no nome, na data de checkout e checkout")
+    @Step("Retorna id's de reservas com base na data de checkout e checkout")
     public Response bookingReturnByCheckoutAndCheckout(){
         return given()
                 .when()

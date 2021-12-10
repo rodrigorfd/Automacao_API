@@ -23,7 +23,7 @@ public class PostBookingTest extends BaseTest {
     @Category({AllTests.class, AcceptanceTests.class})
     @DisplayName("Retorna uma nova reserva para o usuário")
     public void validaCriacaoDeReservaParaUsuario(){
-        postBookingRequest.retornaUmaNovaReserva()
+        postBookingRequest.retornarUmaNovaReserva()
                 .then()
                 .statusCode(200)
                 .body("bookingid",notNullValue());
@@ -35,7 +35,7 @@ public class PostBookingTest extends BaseTest {
     @DisplayName("Cria varias reservas em sequencia")
     public void validaCriacaoDeVariasReservasEmSequencia(){
         for (int i=0; i<=4; i++){
-            postBookingRequest.retornaUmaNovaReserva()
+            postBookingRequest.retornarUmaNovaReserva()
                     .then()
                     .statusCode(200)
                     .body("bookingid",notNullValue());
@@ -47,7 +47,7 @@ public class PostBookingTest extends BaseTest {
     @Category({AllTests.class, E2eTests.class})
     @DisplayName("Criar uma reserva com parâmetros a mais")
     public void criarReservaComParametrosAMais(){
-        postBookingRequest.criaUmaReservaComParametrosAMais()
+        postBookingRequest.criarUmaReservaComParametrosAMais()
                 .then()
                 .statusCode(200)
                 .log().all();
@@ -58,7 +58,7 @@ public class PostBookingTest extends BaseTest {
     @Category({AllTests.class, E2eTests.class})
     @DisplayName("Cria uma reserva com header inválido")
     public void criarReservaComHeaderInvalido(){
-        postBookingRequest.reservaComHeaderInvalido()
+        postBookingRequest.criarReservaComHeaderInvalido()
                 .then()
                 .statusCode(418);
     }
@@ -69,7 +69,7 @@ public class PostBookingTest extends BaseTest {
     @Category({AllTests.class, E2eTests.class})
     @DisplayName("Valida retorno 500 ao criar uma reserva com payload inválido")
     public void criarReservaComPayloadInvalido(){
-        postBookingRequest.reservaComPayloadInvalido()
+        postBookingRequest.criarReservaComPayloadInvalido()
                 .then()
                 .statusCode(500)
                 .log().all();
