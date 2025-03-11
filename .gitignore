@@ -1,0 +1,10 @@
+# Ignorar a pasta target (arquivos gerados pelo Maven)
+target/
+
+# Ignorar configurações locais do IntelliJ
+.idea/
+*.iml
+
+# Ignorar relatórios do Allure (se estiver gerando localmente)
+allure-results/
+allure-report/
